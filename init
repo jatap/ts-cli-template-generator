@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-TEMPLATE_PATH="$HOME/Templates/js/es6"
+TEMPLATE_PATH="$HOME/Templates/js/es6-cli"
 PROJECT_PATH=$(pwd)
 PROJECT_NAME=`basename $(pwd)`
 
