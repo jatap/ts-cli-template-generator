@@ -3,7 +3,10 @@ import child from "child_process"
 describe("main", () => {
   let childExecutionResult
 
-  before((done) => {
+  // Use a "regular" function to consume "this"
+  before(function (done) {
+    this.timeout(3000)
+
     const command = child.exec(
       "node_modules/.bin/babel-node src/index.js",
       {
