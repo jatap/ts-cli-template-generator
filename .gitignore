@@ -13,6 +13,7 @@ reports/
 .project
 *.sublime-*
 !.vscode
+.tern-port
 
 # Other
 .tmp

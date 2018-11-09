@@ -1,3 +1,5 @@
 import Greeter from "./greeter"
 
-export default new Greeter()
+const greeter = new Greeter()
+
+console.log(greeter.greet())
