@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-TEMPLATE_PATH="$HOME/Templates/js/es6-cli"
+TEMPLATE_PATH="$HOME/Templates/js/es6-cli-template-generator"
 PROJECT_PATH=$(pwd)
 PROJECT_NAME=`basename $(pwd)`
 
@@ -11,11 +11,10 @@ units=(".babelrc.js" \
   ".prettierrc" \
   ".tern-project" \
   ".vscode" \
-  "package.json" \
-  "package-lock.json" \
+  "package-tpl.json" \
   "src" \
   "test" \
-  "README.md")
+  "README-tpl.md")
 
 echo -e "\e[1;32m>> Adding a new JS project based on ES6 defaults to ${PROJECT_PATH}...\n"
 
@@ -24,7 +23,13 @@ alias cp="cp"
 for unit in "${units[@]}"
 do
   echo -e "\e[0;37mCopying ${unit}..."
-  cp -Rf ${TEMPLATE_PATH}/${unit} ${PROJECT_PATH}
+  if [ $unit = "README-tpl.md" ]; then
+    cp -Rf ${TEMPLATE_PATH}/${unit} ${PROJECT_PATH}/README.md
+  elif [ $unit = "package-tpl.json" ]; then
+    cp -Rf ${TEMPLATE_PATH}/${unit} ${PROJECT_PATH}/package.json
+  else
+    cp -Rf ${TEMPLATE_PATH}/${unit} ${PROJECT_PATH}
+  fi
 done
 
 echo -e "\e[1;32m\n>> Files has been successfully copied to ${PROJECT_PATH}\n"
