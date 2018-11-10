@@ -1,10 +1,8 @@
 import chai from "chai"
 import sinon from "sinon"
-import sinonChai from "sinon-chai"
 import debug from "debug"
 
 const expect = chai.expect
-chai.use(sinonChai)
 
 process.env.NODE_ENV = "test"
 
