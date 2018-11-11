@@ -69,7 +69,7 @@
       "port": 9229
     },
     {
-      "name": "Debug tests: lunch & attach",
+      "name": "Debug tests: launch & attach",
       "type": "node",
       "request": "launch",
       "runtimeArgs": [
