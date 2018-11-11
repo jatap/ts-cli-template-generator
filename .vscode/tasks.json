@@ -69,8 +69,8 @@
     },
     {
       "type": "npm",
-      "label": "test:report",
-      "script": "test:report",
+      "label": "test:dev",
+      "script": "test:dev",
       "problemMatcher": []
     }
   ]
