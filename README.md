@@ -19,6 +19,7 @@ Template to generate new ES6 cli projects
 ## Packages
 
 - Babel
+- Flow
 - Jest
 - Eslint
 - Prettier

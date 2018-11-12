@@ -4,8 +4,9 @@ node_modules/
 # Reports
 reports/
 
-# Build folder
+# Build folders
 .compiled/
+flow-typed/
 
 # IDE's
 .idea/

@@ -1,9 +1,11 @@
 class Greeter {
-  constructor(user = "Julio") {
+  user: string
+
+  constructor(user: string = "Julio") {
     this.user = user
   }
 
-  greet() {
+  greet(): string {
     return `Hello ${this.user}`
   }
 }

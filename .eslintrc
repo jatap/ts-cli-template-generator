@@ -1,15 +1,28 @@
 {
   "extends": [
     "standard",
+    "plugin:flowtype/recommended",
     "plugin:prettier/recommended",
     "prettier",
     "prettier/standard",
     "plugin:jest/recommended"
   ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": true
+  },
   "plugins": [
     "standard",
-    "jest"
+    "jest",
+    "flowtype"
   ],
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": false
+    }
+  },
   "env": {
     "es6": true,
     "node": true,
@@ -18,7 +31,9 @@
     "jest/globals": true
   },
   "rules": {
+    "strict": 0,
     "semi": [2, "never"],
-    "no-unused-expressions": 0
+    "no-unused-expressions": 0,
+    "flowtype/no-types-missing-file-annotation": 0
   }
 }
