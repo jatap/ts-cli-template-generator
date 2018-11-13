@@ -13,6 +13,7 @@ units=(".babelrc.js" \
   ".tern-project" \
   ".vscode" \
   ".flowconfig" \
+  ".huskyrc" \
   "package-tpl.json" \
   "src" \
   "jest.config.js" \
