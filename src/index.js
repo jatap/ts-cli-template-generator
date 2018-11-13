@@ -1,5 +1,5 @@
-import Greeter from "./greeter"
+import Greeter from "./greeter";
 
-const greeter = new Greeter()
+const greeter = new Greeter();
 
-console.log(greeter.greet())
+console.log(greeter.greet());

@@ -1,7 +1,7 @@
-import { spawnSync } from "child_process"
+import { spawnSync } from "child_process";
 
 describe("main", () => {
-  let execution
+  let execution;
 
   beforeAll(async () => {
     execution = await spawnSync(
@@ -11,12 +11,12 @@ describe("main", () => {
         stdio: "pipe",
         encoding: "utf-8"
       }
-    )
-  })
+    );
+  });
 
   test("prints stdout", () => {
-    const result = "Hello Julio"
+    const result = "Hello Julio";
 
-    expect(execution.stdout.toString().trim()).toBe(result)
-  })
-})
+    expect(execution.stdout.toString().trim()).toBe(result);
+  });
+});
