@@ -15,7 +15,8 @@
       "preLaunchTask": "build",
       "outFiles": [
         "${workspaceFolder}/.compiled/*.js"
-      ]
+      ],
+      "runtimeArgs": ["-r", "babel-register"]
     },
     {
       "type": "node",
@@ -28,7 +29,8 @@
       "preLaunchTask": "build",
       "outFiles": [
         "${workspaceFolder}/.compiled/*.js"
-      ]
+      ],
+      "runtimeArgs": ["-r", "babel-register"]
     },
     {
       "type": "node",
@@ -44,7 +46,8 @@
       "runtimeExecutable": null,
       "env": {
         "NODE_ENV": "test"
-      }
+      },
+      "runtimeArgs": ["-r", "babel-register"]
     },
     {
       "type": "node",
@@ -60,7 +63,8 @@
       "runtimeExecutable": null,
       "env": {
         "NODE_ENV": "test"
-      }
+      },
+      "runtimeArgs": ["-r", "babel-register"]
     },
     {
       "type": "node",
@@ -75,7 +79,8 @@
       "runtimeArgs": [
         "--inspect-brk",
         "${workspaceRoot}/node_modules/.bin/jest",
-        "--runInBand"
+        "--runInBand",
+        "-r", "babel-register"
       ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
