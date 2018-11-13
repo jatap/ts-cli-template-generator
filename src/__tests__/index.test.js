@@ -15,7 +15,7 @@ describe("main", () => {
   });
 
   test("prints stdout", () => {
-    const result = "Hello Julio";
+    const result = "Hello World!";
 
     expect(execution.stdout.toString().trim()).toBe(result);
   });
