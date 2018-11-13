@@ -33,6 +33,7 @@
   "rules": {
     "strict": 0,
     "semi": [2, "never"],
+    "quotes": [2,"double"],
     "no-unused-expressions": 0,
     "flowtype/no-types-missing-file-annotation": 0
   }
