@@ -19,7 +19,7 @@
     "***": "<------------------ build -------------------------------------->",
     "build": "babel src -d .compiled",
     "watch": "babel src -d .compiled --watch",
-    "start": "babel-node src/index.js",
+    "start": "babel-node src/cli.js",
     "postinstall": "npm-run-all flow:deps",
     "commit": "git cz",
     "release": "standard-version --no-verify -t ''",
@@ -38,6 +38,9 @@
     "flow": "flow",
     "flow:check": "flow check",
     "flow:deps": "flow-typed install"
+  },
+  "dependencies": {
+    "commander": "^2.19.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",

@@ -6,7 +6,7 @@ describe("main", () => {
   beforeAll(async () => {
     execution = await spawnSync(
       "node_modules/.bin/babel-node",
-      ["src/cli.js"],
+      ["src/cli.js", "-v"],
       {
         stdio: "pipe",
         encoding: "utf-8"
@@ -15,7 +15,7 @@ describe("main", () => {
   });
 
   test("prints stdout", () => {
-    const result = "Hello World!";
+    const result = "0.1.0";
 
     expect(execution.stdout.toString().trim()).toBe(result);
   });
