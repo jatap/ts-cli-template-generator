@@ -1,7 +1,7 @@
 {
   "name": "es6-cli-template-generator",
   "version": "1.0.0",
-  "description": "XXX",
+  "description": "ES6 Cli Template Generator",
   "main": "src/cli.js",
   "scripts": {
     "build": "babel src -d .compiled",
