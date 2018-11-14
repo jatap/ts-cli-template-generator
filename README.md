@@ -24,6 +24,8 @@ Template to generate new ES6 cli projects
 - Eslint
 - Prettier
 - Debug
+- Commitizen
+- Standard Version
 
 ## Usage
 
