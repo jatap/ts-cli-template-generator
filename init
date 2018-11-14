@@ -17,6 +17,7 @@ units=(".babelrc.js" \
   "package-tpl.json" \
   "src" \
   "jest.config.js" \
+  "cz-customizable.js" \
   "README-tpl.md")
 
 echo -e "\e[1;32m>> Adding a new JS project based on ES6 defaults to ${PROJECT_PATH}...\n"

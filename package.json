@@ -4,22 +4,28 @@
   "description": "ES6 Cli Template Generator",
   "main": "src/cli.js",
   "scripts": {
+    "***": "<------------------ build -------------------------------------->",
     "build": "babel src -d .compiled",
     "watch": "babel src -d .compiled --watch",
     "start": "babel-node src/index.js",
+    "postinstall": "npm-run-all flow:deps",
+    "commit": "git cz",
+    "release": "standard-version --no-verify -t ''",
+    "****": "<----------------- lint --------------------------------------->",
     "lint": "npm run lint:js",
     "lint:js": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "lint:fix": "npm run lint:js -- --fix",
+    "*****": "<---------------- tests -------------------------------------->",
     "test": "jest",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
     "test:watch": "jest --watch || true",
     "test:coverage": "jest --coverage || true",
     "test:coverage:open": "open reports/coverage/index.html",
     "test:dev": "jest --watch --coverage || true",
+    "******": "<--------------- types --------------------------------------->",
     "flow": "flow",
     "flow:check": "flow check",
-    "flow:deps": "flow-typed install",
-    "postinstall": "npm-run-all flow:deps"
+    "flow:deps": "flow-typed install"
   },
   "keywords": [
     "javascript",
@@ -43,6 +49,8 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "commitizen": "^3.0.4",
+    "cz-customizable": "^5.2.0",
     "debug": "^4.1.0",
     "eslint": "^5.7.0",
     "eslint-config-prettier": "^3.1.0",
@@ -60,10 +68,19 @@
     "jest": "^23.6.0",
     "jest-extended": "^0.11.0",
     "npm-run-all": "^4.1.3",
-    "prettier": "^1.13.4"
+    "prettier": "^1.13.4",
+    "standard-version": "^4.4.0"
   },
   "bin": {
     "es6-cli-template-generator": "src/cli.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "cz-customizable.js"
+    }
   },
   "engines": {
     "node": "10.13.0",
