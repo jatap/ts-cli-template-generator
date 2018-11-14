@@ -6,7 +6,7 @@ describe("main", () => {
   beforeAll(async () => {
     execution = await spawnSync(
       "node_modules/.bin/babel-node",
-      ["src/index.js"],
+      ["src/cli.js"],
       {
         stdio: "pipe",
         encoding: "utf-8"
