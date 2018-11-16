@@ -57,7 +57,7 @@
       "stopOnEntry": false,
       "sourceMaps": true,
       "args": [
-        "src/**/*.test.js",
+        "src/**/*.test.js"
       ],
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": null,
@@ -79,8 +79,7 @@
       "runtimeArgs": [
         "--inspect-brk",
         "${workspaceRoot}/node_modules/.bin/jest",
-        "--runInBand",
-        "-r", "babel-register"
+        "--runInBand"
       ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
