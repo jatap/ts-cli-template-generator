@@ -41,7 +41,7 @@ Create a new function in your ```~/.zshrc``` or ```~/.bashrc``` to source ```ini
 # ~/.zshrc or ~/.bashrc
 
 function new_es6_cli_project() {
-  source <cloned_project>/init
+  source <cloned_project>/init <cloned_project>
 }
 ```
 
