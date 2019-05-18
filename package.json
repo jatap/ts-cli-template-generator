@@ -1,19 +1,20 @@
 {
-  "name": "es6-cli-template-generator",
+  "name": "ts-cli-template-generator",
   "version": "1.0.0",
-  "description": "ES6 Cli Template Generator",
+  "description": "TypeScript Cli Template Generator",
   "author": "Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>",
   "license": "ISC",
   "keywords": [
     "javascript",
     "js",
     "node",
-    "es6",
+    "ts",
+    "typescript",
     "cli"
   ],
   "main": "src/cli.js",
   "bin": {
-    "es6-cli-template-generator": "src/cli.js"
+    "ts-cli-template-generator": "src/cli.js"
   },
   "scripts": {
     "***": "<------------------ build -------------------------------------->",

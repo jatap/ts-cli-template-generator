@@ -20,7 +20,7 @@ units=(".babelrc.js" \
   "cz-customizable.js" \
   "README-tpl.md")
 
-echo -e "\e[1;32m>> Adding a new JS project based on ES6 defaults to ${PROJECT_PATH}...\n"
+echo -e "\e[1;32m>> Adding a new JS project based on TypeScript defaults to ${PROJECT_PATH}...\n"
 
 alias cp="cp"
 

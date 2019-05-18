@@ -1,6 +1,6 @@
 # XXX
 
-ES6 cli package
+TypeScript cli package
 
 ## Usage
 

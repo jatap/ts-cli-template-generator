@@ -8,7 +8,8 @@
     "javascript",
     "js",
     "node",
-    "es6",
+    "ts",
+    "typescript",
     "cli"
   ],
   "main": "src/cli.js",

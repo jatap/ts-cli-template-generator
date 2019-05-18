@@ -1,6 +1,6 @@
-# ES6 Cli Template Generator
+# TypeScript Cli Template Generator
 
-Template to generate new ES6 cli projects
+Template to generate new TypeScript cli projects
 
 ## Table of Contents
 
@@ -32,7 +32,7 @@ Template to generate new ES6 cli projects
 Clone the project
 
 ```bash
-$ git clone git@github.com:jatap/es6-cli-template-generator.git
+$ git clone git@github.com:jatap/ts-cli-template-generator.git
 ```
 
 Create a new function in your ```~/.zshrc``` or ```~/.bashrc``` to source ```init``` file
@@ -40,7 +40,7 @@ Create a new function in your ```~/.zshrc``` or ```~/.bashrc``` to source ```ini
 ```bash
 # ~/.zshrc or ~/.bashrc
 
-function new_es6_cli_project() {
+function new_ts_cli_project() {
   source <cloned_project>/init <cloned_project>
 }
 ```
@@ -48,13 +48,13 @@ function new_es6_cli_project() {
 Create a new folder
 
 ```bash
-$ mkdir new_amazing_e6_cli_package && cd $_
+$ mkdir new_amazing_ts_cli_package && cd $_
 ```
 
-Execute ES6 Cli Template Generator
+Execute TypeScript Cli Template Generator
 
 ```bash
-$ new_es6_cli_project
+$ new_ts_cli_project
 ```
 
 ## IDE Support
@@ -70,7 +70,7 @@ Support for debug in VSCode
 
 ## References
 
-- [ES6 Template Generator](https://github.com/jatap/es6-template-generator)
+- [TypeScript Template Generator](https://github.com/jatap/ts-template-generator)
 
 ## TODO
 
