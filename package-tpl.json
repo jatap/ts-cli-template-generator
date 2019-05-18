@@ -4,14 +4,7 @@
   "description": "XXX",
   "author": "Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>",
   "license": "ISC",
-  "keywords": [
-    "javascript",
-    "js",
-    "node",
-    "ts",
-    "typescript",
-    "cli"
-  ],
+  "keywords": ["javascript", "js", "node", "ts", "typescript", "cli"],
   "main": "src/cli.js",
   "bin": {
     "XXX": "src/cli.js"
@@ -67,6 +60,10 @@
     "jest-extended": "^0.11.0",
     "prettier": "^1.15.3",
     "standard-version": "^4.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XXX/XXX.git"
   },
   "config": {
     "commitizen": {
