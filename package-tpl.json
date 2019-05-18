@@ -13,7 +13,7 @@
     "***": "<------------------ build -------------------------------------->",
     "build": "tsc",
     "watch": "tsc --watch",
-    "start": "tsc",
+    "start": "node src/index.ts",
     "commit": "git cz",
     "release": "standard-version --no-verify -t ''",
     "****": "<----------------- lint --------------------------------------->",
