@@ -13,7 +13,7 @@ Template to generate new TypeScript cli projects
 
 ## Requisites
 
-- Node 10.13.0
+- Node 10.15.3
 - NVM 6.4.1
 
 ## Packages
