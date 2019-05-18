@@ -1,7 +1,6 @@
 {
   "extends": [
     "standard",
-    "plugin:flowtype/recommended",
     "plugin:prettier/recommended",
     "prettier",
     "prettier/standard",
@@ -15,14 +14,8 @@
   },
   "plugins": [
     "standard",
-    "jest",
-    "flowtype"
+    "jest"
   ],
-  "settings": {
-    "flowtype": {
-      "onlyFilesWithFlowAnnotation": false
-    }
-  },
   "env": {
     "es6": true,
     "node": true,
@@ -34,7 +27,6 @@
     "strict": 0,
     "semi": [2, "always"],
     "quotes": [2,"double"],
-    "no-unused-expressions": 0,
-    "flowtype/no-types-missing-file-annotation": 0
+    "no-unused-expressions": 0
   }
 }

@@ -7,13 +7,9 @@ module.exports = {
           node: "current"
         }
       }
-    ],
-    "@babel/flow"
+    ]
   ],
-  plugins: [
-    "@babel/transform-flow-strip-types",
-    "@babel/plugin-proposal-class-properties"
-  ],
+  plugins: ["@babel/plugin-proposal-class-properties"],
   retainLines: true,
   sourceMaps: "inline",
   ignore: ["node_modules", ".compiled"]

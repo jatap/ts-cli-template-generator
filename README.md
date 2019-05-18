@@ -19,7 +19,6 @@ Template to generate new TypeScript cli projects
 ## Packages
 
 - Babel
-- Flow
 - Jest
 - Eslint
 - Prettier

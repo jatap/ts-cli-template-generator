@@ -6,7 +6,6 @@ reports/
 
 # Build folders
 .compiled/
-flow-typed/
 
 # IDE's
 .idea/

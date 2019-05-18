@@ -88,24 +88,6 @@
       "label": "test:dev",
       "script": "test:dev",
       "problemMatcher": []
-    },
-    {
-      "type": "npm",
-      "label": "flow",
-      "script": "flow",
-      "problemMatcher": []
-    },
-    {
-      "type": "npm",
-      "label": "flow:check",
-      "script": "flow:check",
-      "problemMatcher": []
-    },
-    {
-      "type": "npm",
-      "label": "flow:deps",
-      "script": "flow:deps",
-      "problemMatcher": []
     }
   ]
 }

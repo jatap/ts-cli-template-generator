@@ -12,7 +12,6 @@ units=(".babelrc.js" \
   ".prettierrc" \
   ".tern-project" \
   ".vscode" \
-  ".flowconfig" \
   ".huskyrc" \
   "package-tpl.json" \
   "src" \
