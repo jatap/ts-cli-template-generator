@@ -1,36 +1,31 @@
 {
-  // Use IntelliSense to learn about possible Node.js debug attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
     {
       "type": "node",
       "request": "launch",
       "name": "Debug file source",
-      "program": "${workspaceFolder}/src/${fileBasenameNoExtension}.js",
+      "program": "${workspaceFolder}/src/${fileBasenameNoExtension}.ts",
       "cwd": "${workspaceFolder}",
       "sourceMaps": true,
       "smartStep": true,
       "preLaunchTask": "build",
       "outFiles": [
         "${workspaceFolder}/.compiled/*.js"
-      ],
-      "runtimeArgs": ["-r", "babel-register"]
+      ]
     },
     {
       "type": "node",
       "request": "launch",
       "name": "Debug file compiled",
-      "program": "${workspaceFolder}/.compiled/${fileBasenameNoExtension}.js",
+      "program": "${workspaceFolder}/.compiled/${fileBasenameNoExtension}.ts",
       "cwd": "${workspaceFolder}",
       "sourceMaps": true,
       "smartStep": true,
       "preLaunchTask": "build",
       "outFiles": [
-        "${workspaceFolder}/.compiled/*.js"
-      ],
-      "runtimeArgs": ["-r", "babel-register"]
+        "${workspaceFolder}/.compiled/*.ts"
+      ]
     },
     {
       "type": "node",
@@ -46,8 +41,7 @@
       "runtimeExecutable": null,
       "env": {
         "NODE_ENV": "test"
-      },
-      "runtimeArgs": ["-r", "babel-register"]
+      }
     },
     {
       "type": "node",
@@ -57,14 +51,13 @@
       "stopOnEntry": false,
       "sourceMaps": true,
       "args": [
-        "src/**/*.test.js"
+        "src/**/*.test.ts"
       ],
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": null,
       "env": {
         "NODE_ENV": "test"
-      },
-      "runtimeArgs": ["-r", "babel-register"]
+      }
     },
     {
       "type": "node",

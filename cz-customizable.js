@@ -46,7 +46,7 @@ module.exports = {
     { name: "services" },
     { name: "cli" },
     { name: "configuration" },
-    { name: "babel" },
+    { name: "typescript" },
     { name: "eslint" },
     { name: "README.md" },
     { name: "node_modules" },

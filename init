@@ -4,19 +4,18 @@ TEMPLATE_PATH="$1"
 PROJECT_PATH=$(pwd)
 PROJECT_NAME=`basename $(pwd)`
 
-units=(".babelrc.js" \
-  ".eslintrc" \
+units=(".eslintrc" \
   ".eslintignore" \
   ".gitignore" \
   ".npmrc" \
   ".prettierrc" \
-  ".tern-project" \
   ".vscode" \
   ".huskyrc" \
   "package-tpl.json" \
   "src" \
   "jest.config.js" \
   "cz-customizable.js" \
+  "tsconfig.json" \
   "README-tpl.md")
 
 echo -e "\e[1;32m>> Adding a new JS project based on TypeScript defaults to ${PROJECT_PATH}...\n"

@@ -1,12 +1,12 @@
 import { spawnSync } from "child_process";
 
 describe("main", () => {
-  let execution;
+  let execution: any;
 
   beforeAll(async () => {
     execution = await spawnSync(
-      "node_modules/.bin/babel-node",
-      ["src/cli.js", "-v"],
+      "node",
+      ["src/cli.ts", "-v"],
       {
         stdio: "pipe",
         encoding: "utf-8"

@@ -1,19 +1,23 @@
 {
   "extends": [
     "standard",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "prettier",
     "prettier/standard",
+    "prettier/@typescript-eslint",
     "plugin:jest/recommended"
   ],
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "ecmaVersion": 2018,
     "sourceType": "module",
     "allowImportExportEverywhere": false,
     "codeFrame": true
   },
   "plugins": [
     "standard",
+    "@typescript-eslint",
     "jest"
   ],
   "env": {

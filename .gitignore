@@ -13,7 +13,6 @@ reports/
 .project
 *.sublime-*
 !.vscode
-.tern-port
 
 # Other
 .tmp
@@ -24,4 +23,4 @@ npm-debug.log
 .env
 
 # auto-generated tag files
-tags
+tags*
