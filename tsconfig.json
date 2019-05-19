@@ -7,7 +7,7 @@
     "checkJs": true,
     "sourceMap": true,
     "outDir": ".compiled/",
-    "lib": ["esnext", "es6", "es2015"],
+    "lib": ["esnext", "es7", "es6", "es2015"],
     "downlevelIteration": true,
     "strict": true,
     "noImplicitAny": true,
@@ -15,5 +15,5 @@
     "moduleResolution": "node"
   },
   "include": ["src"],
-  "exclude": ["node_modules", "**/*.test.ts"]
+  "exclude": ["node_modules", "./compiled", "**/*.test.ts"]
 }

@@ -10,33 +10,36 @@
       "sourceMaps": true,
       "smartStep": true,
       "preLaunchTask": "build",
-      "outFiles": [
-        "${workspaceFolder}/.compiled/*.js"
-      ]
+      "outFiles": ["${workspaceFolder}/.compiled/**/*.js"]
     },
     {
       "type": "node",
       "request": "launch",
       "name": "Debug file compiled",
-      "program": "${workspaceFolder}/.compiled/${fileBasenameNoExtension}.ts",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/.compiled/${fileBasenameNoExtension}.js",
       "cwd": "${workspaceFolder}",
       "sourceMaps": true,
       "smartStep": true,
-      "preLaunchTask": "build",
-      "outFiles": [
-        "${workspaceFolder}/.compiled/*.ts"
-      ]
+      "outFiles": ["${workspaceFolder}/.compiled/**/*.js"]
     },
     {
       "type": "node",
       "request": "launch",
       "name": "Debug test",
-      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
       "stopOnEntry": false,
       "sourceMaps": true,
       "args": [
-        "${file}"
+        "--config",
+        "${workspaceFolder}/jest.config.js",
+        "--runInBand=true",
+        "${fileBasenameNoExtension}"
       ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": null,
       "env": {
@@ -47,12 +50,19 @@
       "type": "node",
       "request": "launch",
       "name": "Debug tests: all",
-      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
       "stopOnEntry": false,
       "sourceMaps": true,
       "args": [
+        "--config",
+        "${workspaceFolder}/jest.config.js",
+        "--runInBand=true",
         "src/**/*.test.ts"
       ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": null,
       "env": {
@@ -71,7 +81,7 @@
       "request": "launch",
       "runtimeArgs": [
         "--inspect-brk",
-        "${workspaceRoot}/node_modules/.bin/jest",
+        "${workspaceFolder}/node_modules/jest/bin/jest.js",
         "--runInBand"
       ],
       "console": "integratedTerminal",
@@ -80,4 +90,3 @@
     }
   ]
 }
-

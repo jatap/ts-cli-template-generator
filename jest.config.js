@@ -18,7 +18,7 @@ module.exports = {
   clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
-  collectCoverage: true,
+  collectCoverage: false,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: ["src/**/*.ts"],
@@ -27,7 +27,7 @@ module.exports = {
   coverageDirectory: "reports/coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: ["src/cli.ts"],
+  coveragePathIgnorePatterns: ["src/index.ts"],
 
   // A list of reporter names that Jest uses when writing coverage reports
   coverageReporters: ["json", "text", "text-summary", "lcov", "clover", "html"],
@@ -67,10 +67,10 @@ module.exports = {
   // modulePathIgnorePatterns: [],
 
   // Activates notifications for test results
-  notify: true,
+  // notify: false,
 
   // An enum that specifies notification mode. Requires { notify: true }
-  notifyMode: "always",
+  // notifyMode: "always",
 
   // A preset that is used as a base for Jest's configuration
   preset: "ts-jest",
