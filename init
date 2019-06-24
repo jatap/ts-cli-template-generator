@@ -11,6 +11,7 @@ units=(".eslintrc" \
   ".prettierrc" \
   ".vscode" \
   ".huskyrc" \
+  ".lintstagedrc" \
   "package-tpl.json" \
   "src" \
   "jest.config.js" \
