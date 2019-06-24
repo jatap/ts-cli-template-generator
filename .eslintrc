@@ -17,7 +17,8 @@
     "plugin:node/recommended",
     "plugin:jest/recommended",
     "prettier",
-    "prettier/@typescript-eslint"
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -25,14 +26,14 @@
     "sourceType": "module"
   },
   "plugins": [
+    "prettier",
     "@typescript-eslint",
     "promise",
     "jest"
   ],
   "rules": {
+    "prettier/prettier": "error",
     "strict": 0,
-    "semi": [2, "always"],
-    "quotes": [2, "single"],
     "import/no-unresolved": 0,
     "import/no-dynamic-require": 0,
     "global-require": 0,
