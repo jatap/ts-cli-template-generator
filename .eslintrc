@@ -1,36 +1,43 @@
 {
-  "extends": [
-    "standard",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "prettier",
-    "prettier/standard",
-    "prettier/@typescript-eslint",
-    "plugin:jest/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module",
-    "allowImportExportEverywhere": false,
-    "codeFrame": true
-  },
-  "plugins": [
-    "standard",
-    "@typescript-eslint",
-    "jest"
-  ],
   "env": {
     "es6": true,
     "node": true,
     "mocha": true,
     "jasmine": true,
-    "jest/globals": true
+    "jest/globals": true,
+    "browser": true
   },
+  "extends": [
+    "eslint-config-airbnb-base",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:promise/recommended",
+    "plugin:node/recommended",
+    "plugin:jest/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "promise",
+    "jest"
+  ],
   "rules": {
     "strict": 0,
     "semi": [2, "always"],
-    "quotes": [2,"double"],
-    "no-unused-expressions": 0
+    "quotes": [2, "single"],
+    "import/no-unresolved": 0,
+    "import/no-dynamic-require": 0,
+    "global-require": 0,
+    "no-plusplus": 0,
+    "no-unused-expressions": 0,
+    "node/no-unsupported-features/es-syntax": 0
   }
 }
