@@ -1,7 +1,6 @@
 {
   "src/**/*.js": [
     "prettier --write",
-    "npm run lint:fix",
-    "git add"
+    "npm run lint:fix"
   ]
 }
