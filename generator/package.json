@@ -4,7 +4,14 @@
   "description": "XXX",
   "author": "Julio Antúnez Tarín <julio.antunez.tarin@gmail.com>",
   "license": "ISC",
-  "keywords": ["javascript", "js", "node", "ts", "typescript", "cli"],
+  "keywords": [
+    "javascript",
+    "js",
+    "node",
+    "ts",
+    "typescript",
+    "cli"
+  ],
   "main": "src/cli.ts",
   "bin": {
     "XXX": "src/cli.js"

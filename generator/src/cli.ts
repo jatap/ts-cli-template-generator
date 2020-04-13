@@ -2,7 +2,10 @@
 
 const program = require('commander');
 
-program.version('0.1.0', '-v, --version').name('XXX').description('XXX');
+program
+  .version('0.1.0', '-v, --version')
+  .name('XXX')
+  .description('XXX');
 
 program.on('--help', () => {
   console.log('');

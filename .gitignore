@@ -21,6 +21,7 @@ reports/
 npm-debug.log
 .netrwhist
 .env
+generator/package-lock.json
 
 # auto-generated tag files
 tags*
