@@ -1,23 +1,25 @@
 #!/usr/bin/env bash
 
-TEMPLATE_PATH="$1"
+TEMPLATE_PATH="$1/generator"
 PROJECT_PATH=$(pwd)
 PROJECT_NAME=`basename $(pwd)`
 
-units=(".eslintrc" \
+units=(".editorconfig" \
   ".eslintignore" \
+  ".eslintrc" \
   ".gitignore" \
+  ".huskyrc" \
+  ".lintstagedrc" \
   ".npmrc" \
   ".prettierrc" \
   ".vscode" \
-  ".huskyrc" \
-  ".lintstagedrc" \
-  "package-tpl.json" \
   "src" \
-  "jest.config.js" \
+  "config" \
   "cz-customizable.js" \
+  "jest.config.js" \
+  "package.json" \
   "tsconfig.json" \
-  "README-tpl.md")
+  "README.md")
 
 touch README.md
 git init
@@ -33,9 +35,9 @@ alias cp="cp"
 for unit in "${units[@]}"
 do
   echo -e "\e[0;37mCopying ${unit}..."
-  if [ $unit = "README-tpl.md" ]; then
+  if [ $unit = "README.md" ]; then
     cp -Rf ${TEMPLATE_PATH}/${unit} ${PROJECT_PATH}/README.md
-  elif [ $unit = "package-tpl.json" ]; then
+  elif [ $unit = "package.json" ]; then
     cp -Rf ${TEMPLATE_PATH}/${unit} ${PROJECT_PATH}/package.json
   else
     cp -Rf ${TEMPLATE_PATH}/${unit} ${PROJECT_PATH}
