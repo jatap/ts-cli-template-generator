@@ -58,7 +58,6 @@ npm install
 
 echo -e "\e[1;32m\n>> Packages have been updated\e[0;37m\n"
 
-git init
 git add .
 git commit -am 'chore(init): first update'
 
