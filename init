@@ -10,7 +10,7 @@ units=(".editorconfig" \
   ".gitignore" \
   ".huskyrc" \
   ".lintstagedrc" \
-  ".npmrc" \
+  ".yarnrc" \
   ".prettierrc" \
   ".vscode" \
   "src" \
@@ -56,7 +56,7 @@ done
 
 echo -e "\e[1;32m\n>> Files has been successfully rewrited in ${PROJECT_PATH}\n"
 
-npm install
+yarn install
 
 echo -e "\e[1;32m\n>> Packages have been updated\e[0;37m\n"
 
