@@ -13,8 +13,8 @@ Template to generate new TypeScript cli projects
 
 ## Requisites
 
-- Node 10.15.3
-- NVM 6.4.1
+- Node 14.x.x
+- NVM 7.x.x
 
 ## Packages
 
@@ -71,7 +71,3 @@ Support for debug in VSCode
 ## References
 
 - [TypeScript Template Generator](https://github.com/jatap/ts-template-generator)
-
-## TODO
-
-- [ ] Move to yeoman
